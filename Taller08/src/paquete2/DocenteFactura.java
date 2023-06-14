@@ -18,7 +18,7 @@ public class DocenteFactura extends Docente {
     }
 
     public void calcularValorCancelar() {
-        valorCancelar = valorFactura - (valorFactura * valorIvaDescuento);
+        valorCancelar = valorFactura - (valorFactura * (valorIvaDescuento/100));
     }
 
     public double obtenerValorFactura() {
@@ -36,8 +36,9 @@ public class DocenteFactura extends Docente {
     @Override
     public String toString(){
         String reporte = String.format("Nombres: %s\nCédula: %s\nValor de la "
-                + "Factura: $%.2f\nValor del Iva de Descuento: %.2f\nValor a "
-                + "Cancelar: $%.2f",
+                + "Factura: $%.2f\nValor del Iva de Descuento: %.2f\n"
+                + "----------------------------------------\nValor a Cancelar: "
+                + "$%.2f",
                 obtenerNombres(),
                 obtenerCedula(),
                 obtenerValorFactura(),

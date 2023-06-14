@@ -46,7 +46,8 @@ public class DocenteNombramiento extends Docente {
     public String toString(){
         String reporte = String.format("Nombres: %s\nCédula: %s\nValor del "
                 + "Sueldo: $%.2f\nValor de las Horas Extra: $%.2f\nNúmero de "
-                + "Horas Extra: %d\nSueldo: $%.2f",
+                + "Horas Extra: %d\n----------------------------------------\n"
+                + "Sueldo: $%.2f",
                 obtenerNombres(),
                 obtenerCedula(),
                 obtenerValorSueldo(),

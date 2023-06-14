@@ -18,9 +18,9 @@ public class Ejecutor {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
         
-        System.out.println("Ingrese los nombres del docente");
+        System.out.println("Ingrese los nombres del docente:");
         String nombres = entrada.nextLine();
-        System.out.println("Ingrese la cédula del docente");
+        System.out.println("Ingrese la cédula del docente:");
         String cedula = entrada.nextLine();
         
         boolean condicion = true;
@@ -37,11 +37,11 @@ public class Ejecutor {
             entrada.nextLine();
             switch(opcion) {
                 case 1:
-                    System.out.println("\nIngrese el valor del sueldo");
+                    System.out.println("\nIngrese el valor del sueldo:");
                     double sueldo = entrada.nextDouble();
-                    System.out.println("Ingrese el valor de las horas extra");
+                    System.out.println("Ingrese el valor de las horas extra:");
                     double valorHoras = entrada.nextDouble();
-                    System.out.println("Ingrese el núemro de horas");
+                    System.out.println("Ingrese el núemro de horas:");
                     int horas = entrada.nextInt();
                     
                     DocenteNombramiento docenteN = new DocenteNombramiento();
@@ -56,10 +56,10 @@ public class Ejecutor {
                     System.out.printf("\n%s\n", docenteN);
                     break;
                 case 2:
-                    System.out.println("\nIngrese el valor de la factura");
+                    System.out.println("\nIngrese el valor de la factura:");
                     double factura = entrada.nextDouble();
                     System.out.println("Ingrese el valor del descuento del "
-                            + "iva");
+                            + "iva:");
                     double ivaDescuento = entrada.nextDouble();
                     
                     DocenteFactura docenteF = new DocenteFactura();
