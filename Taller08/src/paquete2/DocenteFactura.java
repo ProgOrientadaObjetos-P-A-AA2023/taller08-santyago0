@@ -38,7 +38,7 @@ public class DocenteFactura extends Docente {
         String reporte = String.format("Nombres: %s\nCédula: %s\nValor de la "
                 + "Factura: $%.2f\nValor del Iva de Descuento: %.2f\n"
                 + "----------------------------------------\nValor a Cancelar: "
-                + "$%.2f",
+                + "$%.2f\n",
                 obtenerNombres(),
                 obtenerCedula(),
                 obtenerValorFactura(),

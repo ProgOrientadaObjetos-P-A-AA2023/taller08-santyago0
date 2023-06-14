@@ -18,13 +18,13 @@ public class Ejecutor {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
         
-        System.out.println("Ingrese los nombres del docente:");
-        String nombres = entrada.nextLine();
-        System.out.println("Ingrese la cédula del docente:");
-        String cedula = entrada.nextLine();
-        
         boolean condicion = true;
         while(condicion) {
+            System.out.println("Ingrese los nombres del docente:");
+            String nombres = entrada.nextLine();
+            System.out.println("Ingrese la cédula del docente:");
+            String cedula = entrada.nextLine();
+        
             System.out.printf("\n%s\n%s\n%s\n%s\n\n%s",
                     "--Menú de Opciones--",
                     "1) Ingresar un Docente Nombremiento",
@@ -43,6 +43,7 @@ public class Ejecutor {
                     double valorHoras = entrada.nextDouble();
                     System.out.println("Ingrese el núemro de horas:");
                     int horas = entrada.nextInt();
+                    entrada.nextLine();
                     
                     DocenteNombramiento docenteN = new DocenteNombramiento();
 
@@ -61,6 +62,7 @@ public class Ejecutor {
                     System.out.println("Ingrese el valor del descuento del "
                             + "iva:");
                     double ivaDescuento = entrada.nextDouble();
+                    entrada.nextLine();
                     
                     DocenteFactura docenteF = new DocenteFactura();
 
